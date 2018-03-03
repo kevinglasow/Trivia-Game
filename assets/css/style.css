@@ -1,15 +1,16 @@
 body, html {
     height: 100%;
 }
+
+body {
+	font-family: 'Karma', serif;
+}
+
 .bg { 
-    /* The image used */
     background-image: url("../images/background.jpg");
-
-    /* Full height */
     height: 100%; 
-
-    /* Center and scale the image nicely */
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: repeat-y;
     background-size: cover;
 }                    
+

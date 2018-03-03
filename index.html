@@ -5,63 +5,64 @@
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<link rel="stylesheet" href="assets/css/style.css">
-
+	<link href="https://fonts.googleapis.com/css?family=Karma" rel="stylesheet">
 </head>
+
 <body>
 
-<div class="container bg">
+<div class="container-fluid h-100 bg">
   
 	<div class="row">
   		<div class="col-3"></div>
     	<div class="bg-warning col-6">.
  			
-				<!-- Title to be replaced with image -->
-			<h1 class="text-center">The Simpsons</h1>
-			<h2 class="text-center">Trivia Game</h2>
-		
+			<div class="text-center">	
+				<img src="assets/images/Simpsons-logo.jpg" height="350px">		
+				<br>
+			</div>
 		</div>
 	</div>
+
+	<div class="row">
+  		<div class="col-3"></div>
+    	<div class="bg-warning col-6 text-center">
+
+			<h3 stong id="rulesTimer">Rules:</h3>
+			<h4 id="gameQuestion"> One the game begins you will have three minutes to answer as many multiple choice questions as possible. Once the time runs out you will be given your final score.</h4>
+			<br>
+
+    	</div>
+	</div>	
 
 
 	<div class="row">
   		<div class="col-3"></div>
-    	<div class="bg-warning col-6">.
+    	<div class="bg-warning col-6 text-center">
  	
 			<!-- Button that will link to game.html -->
 
-			<a class="btn btn-primary" href="game.html" role="button">Start</a>
-		
-		</div>			
-   	</div> 
+			<div class="btn btn-primary" role="button" id="gameButton">Start</div>	
+			<!-- <a class="btn btn-primary" role="button" id="gameButton" href="#">Start</a> -->
+
+		</div>
+	</div>
+
+	<div class="row h-100">
+		<div class="col-3"></div>
+		<div class="bg-warning col-6"></div>
+
+   	</div>
+
 </div>
 
 
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-
-
-
-
-
-
-<!-- Build main game page -->
-
-
-<!-- Counter that will count down from 120 -->
-
-
-<!-- DIV that will be filled with the trivia questions and radio buttons -->
-
-
-<!-- DIV that will be filled with the score -->
-
+<script type="text/javascript" src="assets/js/javascript.js"></script>
 
 
 
 </body>
 
-<!-- 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
- -->
 
 </html>

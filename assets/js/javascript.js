@@ -1,13 +1,40 @@
-// Create a function that we can call upon the page load
+var timer = 120;
 
-alert(test)
+var startGame = function() {
+		var countDown = setInterval(function(){
+    	timer--
+    	$("#rulesTimer").text("Time Remaining: " + timer)	
+	   	}, 1000);
+    $("#gameBoard").text("1. Who founded the Simpsons' town?")
+	$("#gameQuestion").detach()
+	var radioButtons = $("<fieldset>").html(
+		"<label for='radio-1'>" + trivia[0].A + "</label>" +
+		"<input type='radio' name='radio-1' id='radio-1'>" +
+		"<label for='radio-1'>" + trivia[0].B + "</label>" +
+		"<input type='radio' name='radio-2' id='radio-2'>" + 
+		"<label for='radio-1'>" + trivia[0].C + "</label>" +
+		"<input type='radio' name='radio-3' id='radio-3'>") 
+};
 
-// Set a variable which will be the total time for the game in seconds
+var endGame = function() {
+	if( timer === 0 ) {
+		countDown.clearInterval();
+	}
+}
 
-// Create a timer that subtracts one from that variable every second
+$("#gameButton").click(function() {
+	alert(test);
+	startGame();
+});
 
-// Push the variable to the timer div on game.html
+var trivia = [
+	questionOne = {
+		Question: "1. Who founded the Simpsons' town?",
+		A: "Jebadiah Springfield",
+		B: "Zachariah Springfield",
+		C: "Springfield Manhattan",
+		Correct: "Jebadiah Springfield"
+	}
+]
 
-// Stop the countdown once it equals 0
 
-// Once the countdown timer hits zero replace the questions/answers with results
