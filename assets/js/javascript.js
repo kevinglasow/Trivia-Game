@@ -5,15 +5,18 @@ var startGame = function() {
     	timer--
     	$("#rulesTimer").text("Time Remaining: " + timer)	
 	   	}, 1000);
-    $("#gameBoard").text("1. Who founded the Simpsons' town?")
-	$("#gameQuestion").detach()
-	var radioButtons = $("<fieldset>").html(
+    $("#gameQuestion").text("1. Who founded the Simpsons' town?")
+		var radioButtons = $("<fieldset>").html(
 		"<label for='radio-1'>" + trivia[0].A + "</label>" +
 		"<input type='radio' name='radio-1' id='radio-1'>" +
 		"<label for='radio-1'>" + trivia[0].B + "</label>" +
 		"<input type='radio' name='radio-2' id='radio-2'>" + 
 		"<label for='radio-1'>" + trivia[0].C + "</label>" +
-		"<input type='radio' name='radio-3' id='radio-3'>") 
+		"<input type='radio' name='radio-3' id='radio-3'></fieldset>"); 
+	$("#mainTrivia").html(radioButtons);	
+	console.log(trivia[0].A);
+	console.log(trivia[0].B);
+	console.log(trivia[0].C);
 };
 
 var endGame = function() {
@@ -23,7 +26,6 @@ var endGame = function() {
 }
 
 $("#gameButton").click(function() {
-	alert(test);
 	startGame();
 });
 
